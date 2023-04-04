@@ -1,0 +1,553 @@
+@font-face {
+  font-family: "circle";
+  src: url(../assets/font-regular.ttf);
+}
+
+html {
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "circle";
+}
+
+body {
+  margin: 0;
+}
+
+.Fullpage {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  z-index: 999;
+  gap: 3vw;
+  display: flex;
+  padding-top: 0.7vw;
+  width: 70% !important;
+  justify-content: space-between;
+}
+
+#horizontal-nav {
+  position: fixed !important;
+  width: 70vw !important;
+}
+
+.navbar button {
+  border: none;
+  background-color: transparent;
+  font-size: 0.9vw;
+  cursor: pointer;
+  color: #000;
+}
+
+.navbar button#call::before {
+  width: 53vw;
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #000;
+  right: 5vw;
+  bottom: -1px;
+}
+
+.navbar button#call {
+  border: 1px solid black;
+  padding: 0.4vw 0.6vw;
+  align-items: center;
+  position: relative;
+}
+
+.navbar img {
+  width: 8vw;
+}
+
+.navbar a button {
+  font-size: 0.9vw;
+  font-weight: 600;
+  display: flex;
+  gap: 0.5vw;
+  border-radius: 10vw;
+}
+
+.navbar a img {
+  width: 1.17096018735363vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.modal .navbar img:nth-child(1) {
+  display: none;
+}
+
+.modal .navbar .logo {
+  display: block;
+}
+
+.navbar .logo {
+  display: none;
+}
+
+.menu__nav span {
+  position: absolute;
+  right: 2vw;
+  top: 0vw;
+  font-size: 8vw;
+}
+
+.menu__nav {
+  position: fixed;
+  z-index: 9999;
+  top: -100vh;
+  right: 0;
+  display: grid;
+  gap: 1vw;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px silver;
+  padding: 10vw;
+  transition: .4s;
+  width: 80vw;
+}
+
+.menu__nav.active {
+  top: 20vw;
+}
+
+.mobile nav {
+  display: flex;
+  padding: 5vw;
+  justify-content: space-between;
+  box-shadow: 0 0 10px black;
+  align-items: center;
+  background-color: #fff;
+}
+
+.menu__nav a {
+  font-size: 6vw;
+  border-bottom: 1px solid #000;
+  margin-bottom: 3vw;
+  padding-bottom: 3vw;
+}
+
+.mobile nav button {
+  font-size: 6vw;
+  background-color: transparent;
+  border: transparent;
+}
+
+@media(max-width: 768px) {
+  .mobile .top__slider {
+    height: 180vw;
+    flex-direction: column-reverse;
+  }
+
+  .mobile .top__slider > img {
+    /* display: none; */
+    width: 77vw;
+  }
+
+  .mobile .top__slider button img {
+    width: 6.327088212334115vw;
+    margin-right: 2vw;
+  }
+
+  .mobile .top__slider p {
+    font-size: 6.873536vw;
+  }
+
+  .mobile * {
+    overflow: hidden;
+  }
+
+  .custom__arrow * {
+    overflow: visible;
+  }
+
+  .mobile .top__slider h1 {
+    font-size: 10.747073vw;
+  }
+
+  .mobile .top__slider button {
+    font-size: 4vw;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .mobile .modal__slider iframe {
+    width: 100vw;
+    height: 85vw;
+  }
+
+  .mobile .modal__slider span {
+    width: 14vw;
+    height: 14vw;
+    font-size: 13vw;
+  }
+
+  .mobile .Lang {
+    top: 13%;
+    right: 4%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .body .Lang>button {
+    font-size: 4vw;
+  }
+
+  .mobile .slick-next:before,
+  .mobile .slick-prev:before {
+    width: 8.4vw !important;
+    height: 8.4vw !important;
+  }
+
+  .mobile .custom__arrow .slick-prev {
+    left: 3vw;
+  }
+
+
+  .mobile .custom__arrow .slick-next,
+  .mobile .custom__arrow .slick-prev {
+    top: 50%;
+    right: 10vw;
+  }
+
+  .mobile .slick-dots li button:before {
+    font-size: 4vw;
+  }
+
+  .mobile .row__brand {
+    height: auto;
+    flex-direction: column;
+    padding: 20vw 0;
+  }
+
+  .mobile .card__brand {
+    width: 57vw;
+    height: 57vw;
+  }
+
+  .mobile .card__brand img:nth-child(1) {
+    width: 29.2vw;
+  }
+
+  .mobile .card__brand.dark .btn img {
+    width: 7vw;
+  }
+
+  .mobile .card__brand p {
+    font-size: 4.4vw;
+  }
+
+  .mobile .card__brand img:nth-child(3) {
+    width: 13vw;
+    margin-top: 3vw;
+  }
+
+  .mobile .card__brand.dark {
+    width: 65vw;
+    gap: 6vw;
+    padding: 7vw;
+    border-radius: 8vw;
+    padding-bottom: 14vw;
+  }
+
+  .mobile .card__brand.dark .btn {
+    padding: 3.4vw 0;
+  }
+
+  .mobile .card__brand.dark h1 {
+    font-size: 6.8vw;
+    margin-left: 2vw;
+    overflow: visible;
+  }
+
+  .mobile .col__modal ul {
+    grid-template-columns: 50% 50%;
+  }
+
+  .mobile .col__modal ul li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .mobile .col__modal {
+    transform: scale(2.5);
+  }
+
+  .mobile .card__brand.dark h1::before {
+    width: 11.2vw;
+    height: 11.2vw;
+    left: -4vw;
+    top: -2vw;
+  }
+
+  .mobile .modal .row__brand {
+    height: 80%;
+  }
+
+  .mobile .row_grid img {
+    width: 13vw !important;
+  }
+
+  .row__brand.dark * {
+    overflow: visible;
+  }
+
+  .mobile .col__modal span {
+    font-size: 1.9vw;
+  }
+
+  .mobile .card__brand .img {
+    width: 25vw;
+  }
+
+  .mobile .back__modal {
+    position: static;
+  }
+
+  .mobile .back__modal img {
+    transform: rotate(180deg);
+    width: 4vw;
+  }
+
+  .mobile .title__numbers h1 {
+    font-size: 8.873536vw !important;
+    margin: 0;
+  }
+
+
+  .mobile .card__nat {
+    width: 100%;
+  }
+
+  .mobile .padding__10 {
+    padding: 0;
+  }
+
+  .mobile .item__nat p {
+    font-size: 4vw;
+  }
+
+  .mobile .item__nat b {
+    font-size: 5.2vw;
+  }
+
+  .natijalar *,
+  .natijalar,
+  .numbers,
+  .numbers *,
+  .team,
+  .team * {
+    overflow: visible;
+  }
+
+  .mobile .natijalar .slick-next {
+    right: 1vw !important;
+  }
+
+  .mobile .title__numbers h1::before {
+    width: 8vw;
+    height: 8vw;
+    left: -11vw;
+  }
+
+  .mobile .natijalar {
+    height: auto;
+    gap: 10vw;
+    margin: 10vw 13vw;
+  }
+
+  .mobile .row__numbers {
+    flex-direction: column;
+    gap: 12vw;
+    padding-left: 25%;
+  }
+
+  .mobile .item__r__numbers h1 {
+    font-size: 8.5vw;
+  }
+
+  .mobile .accordion__panel {
+    padding: 1.5vw;
+    font-size: 3.3vw;
+    color: #fff;
+  }
+
+  .mobile .item__r__numbers p {
+    font-size: 4.2vw;
+  }
+
+  .mobile .item__r__numbers h1::after {
+    width: 13vw;
+    height: 13vw;
+  }
+
+  .mobile .item__r__numbers h1::before {
+    left: 4vw;
+    width: 17vw;
+    height: 17vw;
+  }
+
+  .mobile .txt__numbers span {
+    font-size: 6.6vw;
+  }
+
+  .mobile .txt__numbers p {
+    font-size: 4.2vw;
+  }
+
+  .mobile .numbers {
+    background-image: none;
+    height: auto;
+  }
+
+  .mobile .child__card img {
+    width: 65.5vw;
+    height: 80vw;
+    border-radius: 5vw;
+  }
+
+  .mobile .child__card h2 {
+    font-size: 6.5vw;
+  }
+
+  .mobile .child__card p {
+    font-size: 5vw;
+  }
+
+  .mobile .team .slick-slider {
+    margin: 10vw 0;
+  }
+
+  .mobile .team .slick-prev {
+    left: -12vw;
+  }
+
+  .mobile .slick-slider .slick-list {
+    overflow: hidden;
+  }
+
+  .mobile .license {
+    height: auto;
+  }
+
+  .mobile .row__lic h1 {
+    font-size: 4.7vw;
+  }
+
+  .mobile .row__lic p {
+    font-size: 3.4vw;
+    line-height: 4vw;
+  }
+
+  .mobile .row__lic {
+    grid-template-columns: 100%;
+  }
+
+  .mobile .row__lic img {
+    width: 60vw;
+  }
+
+  .mobile .row__faq {
+    grid-template-columns: 100%;
+  }
+
+  .mobile .accordion__button {
+    font-size: 3.3vw !important;
+  }
+
+  .mobile .ques {
+    width: 64vw;
+  }
+
+  .mobile .faq {
+    height: auto;
+  }
+
+  .faq *,
+  .faq {
+    overflow: visible;
+  }
+
+  .mobile .partner {
+    height: auto;
+  }
+
+  .partner>div>img {
+    display: none;
+  }
+
+  .mobile .partner .container {
+    grid-template-columns: 100%;
+  }
+
+  .mobile .partner h1 {
+    font-size: 8vw;
+  }
+
+  .mobile .partner p {
+    font-size: 3.9vw;
+  }
+
+  .mobile .partner input {
+    width: 100%;
+    font-size: 3.6vw;
+    padding: 2vw;
+  }
+
+  .mobile .partner button {
+    width: 100%;
+    font-size: 3.6vw;
+    padding: 2vw;
+  }
+
+  .mobile .partner form {
+    gap: 4vw;
+  }
+
+  .mobile .requesting__body {
+    width: 65vw;
+    gap: 5vw;
+  }
+
+  .mobile .requesting__body p {
+    font-size: 3.3vw;
+    margin-bottom: 3vw;
+  }
+
+  .mobile .requesting input {
+    font-size: 4.4vw;
+  }
+
+  .mobile .requesting .btn {
+    font-size: 4.4vw;
+  }
+}

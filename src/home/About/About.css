@@ -1,0 +1,78 @@
+.natijalar > div{
+    color: #ffff;
+}
+.natijalar{
+    width: 70%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+}
+.natijalar h1{
+    color: #424242 !important;
+    font-size: 1.873536299765808vw !important;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+}
+.card__nat{
+    border-radius: 1.5vw;
+    background-color: #424242;
+    padding: 2vw 1vw;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: space-between;
+    transform: scale(.8);
+    transition: .4s;
+}
+.padding__10 {
+    padding: 1vw;
+}
+.card__nat .item__nat{
+    display: grid;
+    font-size: 1.4vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.424);
+    width: 80%;
+    align-items: center;
+}
+.txt__nat{
+    display: grid;
+    gap: 1vw;
+}
+.slick-active.slick-current ~ .slick-active  .card__nat{
+    transform: scale(1);
+}
+.slick-active:not(.slick-current) ~ .slick-active .card__nat{
+    transform: scale(.8) !important;
+}
+
+.natijalar .slick-prev{
+    top: 45%;
+    left: -4.4vw !important;
+}
+.natijalar .slick-next{
+    right: -2vw !important;
+    top: 45%;
+}
+.bg__default{
+    background-image: url(../../assets//img/japane2.png);
+    background-size: cover;
+}
+.bg__default img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item__nat p{
+    font-size: 1vw;
+    font-weight: 100;
+}
+.item__nat b{
+    font-size: 1.2vw;
+    font-weight: 400;
+}

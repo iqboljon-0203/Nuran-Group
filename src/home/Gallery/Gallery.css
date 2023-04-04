@@ -1,0 +1,52 @@
+.faq {
+  background-color: #282828;
+  background-image: url(../../assets/img/japane2.png);
+  height: 100vh;
+  padding: 8vw 0;
+  background-size: 100%;
+}
+.faq .title__numbers h1 {
+  font-size: 2vw;
+}
+.ques {
+  opacity: 0.6;
+  width: 30vw;
+}
+
+.row__faq {
+  display: grid;
+  grid-template-columns: 55% 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__button {
+  background-color: #6d6d6d !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  font-size: 1.3vw !important;
+  padding: 1vw !important;
+  width: 95% !important;
+  text-align: left !important;
+  border: none !important;
+  border-radius: 1vw !important;
+  position: relative;
+}
+.faq .accordion__button:before{
+  position: absolute !important;
+  right: 1.6vw !important;
+  width: .7vw;
+  height: .7vw;
+  bottom: 1.5vw;
+}
+.faq .accordion__item + .accordion__item{
+  margin-top: 1vw;
+}
+.accordion__button:hover {
+  background-color: red !important;
+}
+.accordion__panel {
+  padding: 1.5vw;
+  font-size: 1.3vw;
+  color: #fff;
+}

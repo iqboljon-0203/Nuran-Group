@@ -1,0 +1,91 @@
+.numbers {
+  background-color: #282828;
+  background-image: url(../../assets/img/japane2.png);
+  height: 100vh;
+  background-size: 100%;
+  padding: 10vw 0;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.modal .navbar *, #dark__bar * {
+  color: #fff !important;
+}
+.modal .navbar button#call::before,.navbar#dark__bar button#call::before {
+  background-color: #fff;
+}
+.modal .navbar button#call ,.navbar#dark__bar button#call {
+  border: 1px solid #fff;
+  padding: 0.3vw 1vw;
+}
+.title__numbers h1 {
+  font-size: 1.873536299765808vw !important;
+  color: #ffff;
+  position: relative;
+  z-index: 2;
+  margin-left: 4vw;
+}
+.title__numbers h1::before {
+  width: 2vw;
+  height: 2vw;
+  background-color: red;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -4vw;
+}
+.item__r__numbers * {
+  color: #fff;
+}
+.row__numbers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6vw;
+}
+.item__r__numbers h1 {
+  font-size: 3.5vw;
+  position: relative;
+  z-index: 9;
+}
+.item__r__numbers p{
+  font-size: 1.2vw;
+  position: relative;
+  z-index: 9;
+}
+.item__r__numbers h1::after {
+  background: #4C4C4C;
+  left: -3vw;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+.item__r__numbers h1::before {
+  background: #333333;
+  left: 1vw;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -2;
+  content: "";
+  top: -2vw;
+}
+.txt__numbers{
+  text-align: center;
+  display: grid;
+  gap: 2vw;
+  margin: 4vw 0 0 0 ;
+}
+.txt__numbers span{
+  font-size: 1.6vw;
+  color: #4C4C4C;
+}
+.txt__numbers p{
+  color: #4C4C4C;
+  font-size: 1.2vw;
+}

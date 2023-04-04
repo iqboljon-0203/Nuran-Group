@@ -1,0 +1,269 @@
+.card__brand {
+  padding: 3vw;
+  border: 1px solid #aeaeae;
+  width: 14vw;
+  border-radius: 2vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  width: 17.638563622170178vw;
+  height: 17.638563622170178vw;
+}
+
+.card__brand:hover {
+  box-shadow: 0 0 10px silver;
+  background-color: #fff;
+}
+
+.card__brand p {
+  font-size: 1.4vw;
+  position: relative;
+  bottom: -1.4vw;
+}
+
+.card__brand img:nth-child(1) {
+  width: 8.2vw;
+}
+
+.card__brand img:nth-child(3) {
+  width: 4vw;
+}
+
+.row__brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+  height: 100vh;
+  background-image: url(../../assets/img/japane2.png);
+  background-size: cover;
+  padding: 0px 21vw;
+}
+.col__modal{
+  position: relative;
+}
+
+.row__brand.dark {
+  background-color: #282828;
+}
+
+.double__section .slick-next {
+  right: 3vw;
+  right: auto;
+  position: absolute;
+  left: 23%;
+  width: 25%;
+  height: 25vw;
+  opacity: 0;
+}
+
+.col__modal {
+  display: grid;
+  gap: 1vw;
+}
+
+.col__modal ul {
+  list-style: none;
+  display: grid;
+  gap: 2vw;
+}
+
+.col__modal ul li {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.459);
+  cursor: pointer;
+}
+
+.col__modal ul li p {
+  width: 2.3vw;
+  height: 2.3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #525252;
+  font-size: 1.405152224824356vw;
+}
+
+.col__modal p {
+  font-size: 2vw;
+}
+
+.col__modal ul li.active p  {
+  background-color: red;
+  color: #fff;
+}
+
+.col__modal ul li:hover span, .col__modal ul li.active span {
+  color: #fff;
+}
+
+.col__modal article {
+  color: #ffff;
+  font-size: 1.8vw;
+  margin-bottom: 2vw;
+}
+
+.col__modal span {
+  font-size: 1.4vw;
+}
+
+.card__brand.dark {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.061);
+  border: transparent;
+  border-radius: 3vw;
+  box-shadow: 0 0 0 transparent;
+  align-items: flex-start;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 6vw;
+  gap: 2.5vw;
+  width: 20vw;
+}
+
+.card__brand.dark * {
+  color: #fff;
+}
+
+.card__brand.dark h1 {
+  font-size: 1.8vw;
+  position: relative;
+  z-index: 2;
+  margin-left: 1vw;
+  text-align: left;
+}
+
+.card__brand h1 span {
+  position: relative;
+  z-index: 9;
+}
+
+.card__brand.dark h1::before {
+  position: absolute;
+  z-index: 1;
+  content: '';
+  width: 3.2vw;
+  height: 3.2vw;
+  border-radius: 50%;
+  background-color: red;
+  left: -1vw;
+  top: -.5vw;
+}
+
+.row_grid {
+  align-items: center;
+  gap: 1vw;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.row_grid p {
+  font-size: .9vw;
+  text-align: left;
+  bottom: 0 !important;
+}
+
+.row_grid img {
+  width: 3vw !important;
+}
+.card__brand.dark .btn img{
+  width: 2vw;
+}
+.card__brand.dark .btn{
+  background-color: red;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  justify-content: center;
+  padding: 1.4vw 1vw;
+  border: transparent;
+  bottom: 0;
+  font-size: 1vw;
+}
+.btn{
+  cursor: pointer;
+}
+.card__brand.dark .btn:hover,
+.requesting .btn:hover{
+  background-color: rgb(105, 0, 0);
+}
+.card__brand .img{
+  width: 8vw;
+}
+.card__brand .custom__p{
+  font-size: 1.3vw;
+  text-align: left;
+}
+.back__modal{
+  position: absolute;
+  transform: rotate(180deg);
+  top: 0;
+  left: -12vw;
+  cursor: pointer;
+}
+.requesting{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.requesting__body{
+  padding:6vw 4vw;
+  width: 30vw;
+  display: grid;
+  gap: 3vw;
+  border-radius: 2vw;
+  box-shadow: 0 0 1vw #000;
+  background: linear-gradient(to bottom right, rgba(124, 93, 64, 0.5), #282828);
+}
+.requesting__body p{
+  font-size: 1.3vw;
+  color: #7E7E7E;
+  text-transform: uppercase;
+}
+.requesting input{
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  width: 95%;
+  padding: .5vw;
+  font-size: 1.4vw;
+}
+.requesting input:focus{
+  outline: none;
+}
+.requesting .PhoneInput{
+  width: 100%;
+}
+.requesting .btn{
+  width: 100%;
+  padding: 1vw;
+  font-size: 1.4vw;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 10vw;
+}
+ div.row__brand.dark > div.col__modal > div > span > img{
+  width: 3vw;
+}
+ 

@@ -1,0 +1,41 @@
+.title__numbers.childrens * {
+  color: black;
+}
+.team {
+  padding: 10vw 0;
+  background-size: cover;
+  background-position: top;
+  background-image: url(../../assets/img/japane2.png);
+}
+.team .slick-next,
+.team .slick-prev {
+  width: 5vw;
+  height: 5vw;
+  top: 38%;
+}
+.team .slick-next {
+  right: -3vw;
+}
+.team .slick-prev {
+  left: -6vw;
+}
+.child__card img {
+  width: 13.5vw;
+  height: 16vw;
+  object-fit: cover;
+  background-color: #fff;
+  border-radius: 1vw;
+}
+.child__card {
+  padding: 2vw;
+}
+.child__card h2 {
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 0.4vw 0;
+}
+.child__card p {
+  font-size: 1vw;
+  text-align: center;
+  color: #ACACAC;
+}
